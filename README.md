@@ -78,9 +78,13 @@ Here list of functions and brief description:
 Lst functions use struct:
 
 typedef struct s_list
+
 {
+
   void *content;
+  
   struct s_list *next;
+  
 } t_list;
 
 • ft_lstnew - creates a new allocated element t_list;
