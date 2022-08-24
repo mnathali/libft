@@ -2,7 +2,7 @@
 The first project of 42 school
 The aim of the project is to create basic functions of C library.
 
-To compile the static library use make command. You can use this library by compiling your project with the library.
+To compile the static library use make command and make bonus to add lst functions. You can use this library by compiling your project with the library.
 Declaratins of functions are represented in header file.
 
 Here list of functions and brief description:
