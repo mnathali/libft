@@ -1,11 +1,13 @@
 # libft
+## Description
 The first project of 42 school
 The aim of the project is to create basic functions of C library.
 
+## Usage
 To compile the static library use make command and make bonus to add lst functions. You can use this library by compiling your project with the library.
 Declaratins of functions are represented in header file.
 
-Here list of functions and brief description:
+## Here list of functions and brief description:
 
 • ft_isalpha - check if a character is ASCII letter;
 
@@ -77,14 +79,13 @@ Here list of functions and brief description:
 
 Lst functions use struct:
 
+```c
 typedef struct s_list
-
 {
-
   void *content; 
   struct s_list *next;
-
 } t_list;
+```
 
 • ft_lstnew - creates a new allocated element t_list;
 
