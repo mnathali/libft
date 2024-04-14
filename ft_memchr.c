@@ -21,14 +21,13 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	while (c >= 256)
-		c -= 256;
-	while (*str != c && i < n - 1 && str)
+	c %= 256;
+	while (str && *str != c && i < n - 1)
 	{
 		i++;
 		str++;
 	}
-	if (*str == c && i < n)
+	if (str && *str == c && i < n)
 		return ((void *)str);
 	return (0);
 }
